@@ -5,7 +5,6 @@ pipeline {
         stage('Dev') {
             steps {
                 sh 'cd /var/lib/jenkins/workspace/Hounslow'
-                sh 'll'
                 sh 'docker-compose up'
             }
         }
