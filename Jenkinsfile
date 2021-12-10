@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('Dev') {
             steps {
-                sh 'pwd'
+                sh 'cd /var/lib/jenkins/workspace/Hounslow'
+                sh 'll'
+                sh 'docker-compose up'
             }
         }
         stage('Test') {
